@@ -65,7 +65,7 @@ const Toggle: React.FC<ToggleProps> = ({ onToggle }) => {
   };
 
   return (
-    <ToggleContainer onClick={handleToggle}>
+    <ToggleContainer onClick={handleToggle} role="switch" aria-checked={isOn}>
       <ToggleSwitch isOn={isOn}>
         <ToggleKnob isOn={isOn} />
       </ToggleSwitch>
